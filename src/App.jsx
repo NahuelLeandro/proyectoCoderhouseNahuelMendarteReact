@@ -7,7 +7,7 @@ function App() {
 
   return (
     <>
-      <NavBar/>
+      <NavBar />
       <ItemListContainer text={"lo que sea"}/>
     </>
   )

@@ -3,7 +3,7 @@ import './CartWidget'
 import CartWidget from './CartWidget';
 function NavBar (){
     return(
-        <nav>
+        <nav className ="navBar">
             <img src={logo} alt="logo"/>
             <h1>Emunah</h1>
             <ul>
