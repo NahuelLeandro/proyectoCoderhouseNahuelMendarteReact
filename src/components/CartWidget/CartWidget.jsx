@@ -1,3 +1,4 @@
+import './CartWidget.scss';
 function CartWidget (){
     return(
         <div /*icono de carrito y burbuja de notificacion con un valor estatico*/ >

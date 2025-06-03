@@ -1,3 +1,4 @@
+import './ItemListContainer.scss';
 function ItemListContainer ({text}){
     return(
         <div>

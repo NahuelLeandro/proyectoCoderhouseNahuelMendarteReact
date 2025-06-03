@@ -1,6 +1,7 @@
-import logo from '../media/imagenes/logo.jpg'
-import './CartWidget'
-import CartWidget from './CartWidget';
+import logo from '../../media/imagenes/logo.jpg'   
+import CartWidget from '../CartWidget/CartWidget.jsx';
+import './NavBar.scss';
+
 function NavBar (){
     return(
         <nav className ="navBar">
@@ -11,7 +12,7 @@ function NavBar (){
                 <li>Cremas</li>
                 <li>Piedras</li>
             </ul>
-            <CartWidget/>
+            <CartWidget className="CartWidget"/>
         </nav>
     )
 }
