@@ -6,7 +6,7 @@ function NavBar (){
     return(
         <nav className ="navBar">
             <img src={logo} alt="logo"/>
-            <h1>Emunah</h1>
+            <h1>Emunah Espacio Olistico</h1>
             <ul>
                 <li>Saumerios</li>
                 <li>Cremas</li>
