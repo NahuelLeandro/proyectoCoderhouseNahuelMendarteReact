@@ -12,7 +12,7 @@ function NavBar (){
                 <li>Cremas</li>
                 <li>Piedras</li>
             </ul>
-            <CartWidget className="CartWidget"/>
+            <CartWidget/>
         </nav>
     )
 }

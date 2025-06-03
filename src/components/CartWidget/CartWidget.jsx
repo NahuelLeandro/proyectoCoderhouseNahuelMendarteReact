@@ -1,7 +1,7 @@
 import './CartWidget.scss';
 function CartWidget (){
     return(
-        <div /*icono de carrito y burbuja de notificacion con un valor estatico*/ >
+        <div  className="CartWidget" /*icono de carrito y burbuja de notificacion con un valor estatico*/ >
             <p>🛒 3</p>
         </div>
         

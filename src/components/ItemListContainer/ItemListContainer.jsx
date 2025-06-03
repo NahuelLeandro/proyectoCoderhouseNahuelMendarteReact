@@ -1,7 +1,7 @@
 import './ItemListContainer.scss';
 function ItemListContainer ({text}){
     return(
-        <div>
+        <div className='ItemListContainer'>
             {text}
         </div>
         
