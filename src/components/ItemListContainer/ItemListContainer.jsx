@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import ItemList from "./ItemList";
 import { useParams } from "react-router";
+import ItemList from "./ItemList.jsx";
 
 
 function ItemListContainer(){
