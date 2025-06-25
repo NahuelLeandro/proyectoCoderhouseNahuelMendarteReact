@@ -1,8 +1,8 @@
-import Item from "../ItemListContainer/Item"
+
 import { useState, useEffect } from "react"
 
 import { useParams } from "react-router"
-import ItemDetail from "./ItemDetaail"
+import ItemDetail from "./ItemDetail"
 
 
 function ItemDetailContainer()
