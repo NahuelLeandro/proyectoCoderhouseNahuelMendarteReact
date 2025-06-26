@@ -1,4 +1,4 @@
-import Counter from "../Counter/Counter"
+import Counter from "../Counter/Counter.jsx"
 
 function ItemDetail( {item} )
 {   

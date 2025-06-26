@@ -1,5 +1,5 @@
 import './ItemListContainer_scss.scss'
-import Item from './Item';
+import Item from './Item.jsx';
 function ItemList ({items}) {
     return(
         <div className='ItemList'>
