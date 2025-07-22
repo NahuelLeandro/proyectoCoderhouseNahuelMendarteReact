@@ -1,25 +1,47 @@
 
-@import "../../styles-sass/variables";
+
 .navBar {
-    background-color: $colorPrincipal;
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 10px 20px;
+background-color: #333;
+color: white;
+
+img {
+    height: 40px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 1.5rem;
+    flex-grow: 1;
+    text-align: center;
+}
+
+select {
+    margin-right: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+}
+
+button {
+    background-color: #fff;
+    color: #333;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-size: 1rem;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 1rem;
+    gap: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
 
-    img {
-        height: 100px;
+    &:hover {
+    background-color: #eee;
     }
-
-    ul {
-        list-style: none;
-        display: flex;
-        gap: 1rem;
-
-            li {
-                font-weight: bold;
-            }
-    }
-
-    
+}
 }
