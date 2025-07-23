@@ -1,7 +1,7 @@
 import './Checkout.scss';
-import { useCart } from '../../providers/useCart';
+import { useCart } from '../providers/useCart';
 import { serverTimestamp } from 'firebase/firestore';
-import { createOrder } from '../../firebase/db';
+import { createOrder } from '../firebase/db';
 
 
 

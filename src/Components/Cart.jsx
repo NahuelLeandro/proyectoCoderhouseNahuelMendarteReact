@@ -1,4 +1,4 @@
-import { useCart } from "../../providers/useCart";
+import { useCart } from "../providers/useCart";
 import { useNavigate } from "react-router";
 function Cart () {
 
