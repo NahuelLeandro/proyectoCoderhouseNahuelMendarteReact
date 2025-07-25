@@ -1,0 +1,53 @@
+.Cart {
+    padding: 2rem;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+    h2 {
+        margin-bottom: 1rem;
+        color: #333;
+    }
+
+    p {
+        background: #fff;
+        padding: 1rem;
+        margin-bottom: 0.5rem;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        button {
+        background-color: #e74c3c;
+        color: white;
+        border: none;
+        padding: 0.3rem 0.7rem;
+        border-radius: 4px;
+        cursor: pointer;
+
+        &:hover {
+            background-color: #c0392b;
+        }
+        }
+    }
+
+    button {
+        display: inline-block;
+        margin-right: 0.5rem;
+        margin-top: 1rem;
+        background-color: #3498db;
+        color: white;
+        border: none;
+        padding: 0.6rem 1rem;
+        border-radius: 6px;
+        cursor: pointer;
+
+        &:hover {
+        background-color: #2980b9;
+        }
+    }
+}

@@ -2,6 +2,8 @@ import { useCart } from "../context/useCart";
 import { useNavigate } from "react-router";
 import { useContext } from "react";
 import { CartContext } from "../context/CartContext";
+import "../scss/Cart.scss"
+
 
 function Cart () {
     
@@ -17,7 +19,7 @@ function Cart () {
     
     if (cart.length === 0 ){
         return(
-            <div>
+            <div className="Cart">
                 <h2>No tienes productos en el carrito</h2>
                 <button onClick={() => navigate("/")} >Ir al inicio</button>
             </div>
@@ -25,7 +27,7 @@ function Cart () {
     }
 
     return(
-        <div>
+        <div className="Cart">
             {cart.map( (prod) => (
                 <p key={prod.id}>
                     {prod.nombre} x {prod.quantity}

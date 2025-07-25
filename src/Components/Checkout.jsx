@@ -1,4 +1,4 @@
-import './Checkout.scss';
+import '../scss/Checkout.scss';
 import { useCart } from '../context/useCart';
 import { serverTimestamp } from 'firebase/firestore';
 import { createOrder } from '../firebase/db';
@@ -71,7 +71,7 @@ function Checkout() {
 
     return (
 
-        <div>
+        <div className="Checkout">
             {orderId ? (
                 <div>
                     <h2>¡Gracias por su compra!</h2>

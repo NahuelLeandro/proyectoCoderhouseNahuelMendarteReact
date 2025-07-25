@@ -1,5 +1,5 @@
 import ItemCount from "./ItemCount";
-import "./ItemDetailSCSS.scss";
+import "../scss/ItemDetailSCSS.scss";
 
 
 function ItemDetail ( {item , id} ){

@@ -1,7 +1,7 @@
 import { useState ,useEffect } from "react";
 import logo from '../media/imagenes/logo.jpg';
 import CartWidget from "./CartWidget";
-import "./NavBar.scss"
+import "../scss/NavBar.scss"
 import { Link } from "react-router";
 import { useNavigate } from "react-router";
 import { getCategoryList } from "../firebase/db";

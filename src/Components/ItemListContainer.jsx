@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import ItemList from "./ItemList";
-import './ItemListContainer.scss';
+import '../scss/ItemListContainer.scss';
 import { withLog } from "../hoc/withLog";
 import { withLoading } from "../hoc/withLoading";
 import { useParams } from "react-router";
