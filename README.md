@@ -1,7 +1,9 @@
 
 # 🛍️ React eCommerce App
 
-Este proyecto es una aplicación eCommerce desarrollada con **React**, que permite visualizar productos, filtrarlos por categorías y gestionar un carrito de compras dinámico. Fue creado como parte del aprendizaje de desarrollo web y está enfocado en ofrecer una experiencia simple y funcional.
+
+Este proyecto es para la entrega final del proyecto de React de Nahuel Mendarte. Es una app de venta de productos holisticos.
+Este proyecto es una aplicación eCommerce desarrollada con **React**, que permite visualizar productos, filtrarlos por categorías y gestionar un carrito de compras dinámico. Fue creado como parte del aprendizaje de desarrollo web y está enfocado en ofrecer una experiencia simple y funcional. 
 
 ## 📌 Funcionalidades principales
 
