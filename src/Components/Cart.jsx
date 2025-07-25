@@ -17,7 +17,10 @@ function Cart () {
     
     if (cart.length === 0 ){
         return(
-            <h2>no tienes productos en el carrito</h2>
+            <div>
+                <h2>No tienes productos en el carrito</h2>
+                <button onClick={() => navigate("/")} >Ir al inicio</button>
+            </div>
         )
     }
 

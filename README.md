@@ -1,12 +1,51 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# 🛍️ React eCommerce App
 
-Currently, two official plugins are available:
+Este proyecto es una aplicación eCommerce desarrollada con **React**, que permite visualizar productos, filtrarlos por categorías y gestionar un carrito de compras dinámico. Fue creado como parte del aprendizaje de desarrollo web y está enfocado en ofrecer una experiencia simple y funcional.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📌 Funcionalidades principales
 
-## Expanding the ESLint configuration
+- ✅ Visualización de productos disponibles.
+- ✅ Filtrado por categorías.
+- ✅ Detalle individual de cada producto.
+- ✅ Sumar o restar cantidades antes de agregarlos al carrito.
+- ✅ Agregar productos al carrito.
+- ✅ Eliminar productos del carrito.
+- ✅ Vaciar completamente el carrito.
+- ✅ Visualización del total del carrito actualizado en todo momento.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🧱 Tecnologías utilizadas
+
+- ⚛️ [React](https://react.dev/) para la construcción de la interfaz.
+- 🔥 [Firebase](https://firebase.google.com/docs) como base de datos para los productos.
+- 🎯 [React Router](https://reactrouter.com/en/main) para navegación entre páginas y rutas dinámicas.
+- 💅 [Sass](https://sass-lang.com/documentation/) para el manejo de estilos personalizados por componente.
+- 🎨 [React Icons](https://react-icons.github.io/react-icons/) para incorporar íconos visuales.
+
+## 📦 Dependencias
+
+```json
+"dependencies": {
+  "firebase": "^12.0.0",
+  "react": "^19.1.0",
+  "react-dom": "^19.1.0",
+  "react-icons": "^5.5.0",
+  "react-router": "^7.6.3",
+  "sass": "^1.89.2"
+}
+```
+
+- [Firebase Docs](https://firebase.google.com/docs)
+- [React Docs](https://react.dev/)
+- [React DOM Docs](https://react.dev/reference/react-dom)
+- [React Icons Docs](https://react-icons.github.io/react-icons/)
+- [React Router Docs](https://reactrouter.com/en/main)
+- [Sass Docs](https://sass-lang.com/documentation/)
+
+## 👨‍💻 Autor
+
+Desarrollado por **Nahuel Mendarte** ✨
+
+---
+
+¡Gracias por visitar este proyecto! Si tenés sugerencias o querés contribuir, no dudes en dejar tu feedback.

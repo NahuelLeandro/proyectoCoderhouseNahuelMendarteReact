@@ -2,14 +2,19 @@ import './Checkout.scss';
 import { useCart } from '../context/useCart';
 import { serverTimestamp } from 'firebase/firestore';
 import { createOrder } from '../firebase/db';
+import { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router';
 
 
 
 function Checkout() {
 
     const { cart } = useCart()
+    const { vaciarCarrito } = useCart()
+    const [orderId, setOrderId] = useState(null);
+    const navigate = useNavigate();
     
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
             e.preventDefault();
 
             const form = e.target;
@@ -48,11 +53,33 @@ function Checkout() {
                 time: serverTimestamp()
             };
 
-            createOrder(order);
+            try {
+                const id = await createOrder(order);
+                setOrderId(id);
+            } catch (error) {
+                console.error("Error al crear la orden:", error);
+            }
+            
         };
 
+
+        useEffect(() => {
+            if (orderId) {
+                vaciarCarrito();
+            }
+        }, [orderId]);
+
     return (
-        <form onSubmit={handleSubmit} className="Checkout">
+
+        <div>
+            {orderId ? (
+                <div>
+                    <h2>¡Gracias por su compra!</h2>
+                    <p>El ID de su orden es: {orderId}</p>
+                    <button onClick={() => navigate("/")}>Volver a la Home</button>
+                </div>
+            ) : (
+            <form onSubmit={handleSubmit} className="Checkout">
             <h2>Finalizar Compra</h2>
 
             <label>
@@ -105,7 +132,16 @@ function Checkout() {
             </label>
 
             <button type="submit">Confirmar compra</button>
-        </form>
+
+
+
+
+            </form>
+
+            )}
+
+
+        </div>
     );
 }
 
