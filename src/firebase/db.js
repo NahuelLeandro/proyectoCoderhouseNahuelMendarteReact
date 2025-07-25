@@ -14,7 +14,7 @@ const db = getFirestore(app);
 
 // Función para traer productos
 export const getItems = async () => {
-    const querySnapshot = await getDocs(collection(db, "items"));
+    const querySnapshot = await getDocs(collection(db, "productos"));
 
     const items = [];
     querySnapshot.forEach((doc) => {
@@ -24,22 +24,25 @@ export const getItems = async () => {
 return items;
 };
 
-// Función para traer categorías
+// Función para traer categorías en este momento repite las categorias
 export const getCategoryList = async () => {
-    const querySnapshot = await getDocs(collection(db, "items"));
+    const querySnapshot = await getDocs(collection(db, "productos"));
 
     const categoryList = [];
     querySnapshot.forEach((doc) => {
-        categoryList.push(doc.data().category);
+        const categoria = doc.data().categoria;
+        if (!categoryList.includes(categoria)) {
+            categoryList.push(categoria);
+        }
     });
 
     return categoryList;
 };
 
 
-export const getItemsByCategory =  async (category) => {
+export const getItemsByCategory =  async (categoria) => {
     
-    const q = query(collection(db, "items"), where("category", "==", category));
+    const q = query(collection(db, "productos"), where("categoria", "==", categoria));
     const querySnapshot = await getDocs(q);
     const items = [];
     querySnapshot.forEach((doc) => {
@@ -52,7 +55,7 @@ export const getItemsByCategory =  async (category) => {
 
 export const getItem = async (id) => {
     
-    const docRef = doc(db, "items", id);
+    const docRef = doc(db, "productos", id);
     const docSnap = await getDoc(docRef);
     
     if (docSnap.exists()) {

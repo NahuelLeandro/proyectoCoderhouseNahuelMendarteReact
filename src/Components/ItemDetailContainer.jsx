@@ -8,15 +8,13 @@ function ItemDetailContainer (){
     const { id } = useParams()
 
     useEffect(() => {
-        // fetch(`https://dummyjson.com/products/${id}`)
-        //     .then(res => res.json())
-        //     .then( res => setItem(res) )        
+
         getItem(id).then(res => setItem(res));
     
     }, [id])
 
     return(
-        <ItemDetail item={item} />
+        <ItemDetail item={item} id ={id}/>
     )
 }
 

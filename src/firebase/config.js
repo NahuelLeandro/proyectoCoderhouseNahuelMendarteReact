@@ -2,12 +2,12 @@
 import { initializeApp } from "firebase/app";
 
 const firebaseConfig = {
-    apiKey: "AIzaSyCmOGzCq_h0PJsN6zPYXKc1UnXHcIAWvq8",
-    authDomain: "prueba-emunah-bd.firebaseapp.com",
-    projectId: "prueba-emunah-bd",
-    storageBucket: "prueba-emunah-bd.firebasestorage.app",
-    messagingSenderId: "846967335141",
-    appId: "1:846967335141:web:2a5d64c2d7bc68bfea4c0c"
+    apiKey: "AIzaSyAs48A4msiDa6knNBm4hfyqgLTrIZqLWWw",
+    authDomain: "emunahentregacoderhouse.firebaseapp.com",
+    projectId: "emunahentregacoderhouse",
+    storageBucket: "emunahentregacoderhouse.firebasestorage.app",
+    messagingSenderId: "64727428432",
+    appId: "1:64727428432:web:d40604d1377e4874715055"
 };
 
 

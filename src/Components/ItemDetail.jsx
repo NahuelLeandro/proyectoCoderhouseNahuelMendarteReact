@@ -2,16 +2,16 @@ import ItemCount from "./ItemCount";
 import "./ItemDetailSCSS.scss";
 
 
-function ItemDetail ( {item} ){
+function ItemDetail ( {item , id} ){
 
 
     return(
         <div className="ItemDetail" > 
-            <img src={item?.image} alt={item?.name} />
-            <h2>{item?.name}</h2>
-            <p>{item?.description}</p>
-            <p>{item?.price}</p>
-            <ItemCount item={item}/>
+            <img src={item?.imagen} alt={item?.nombre} />
+            <h2>{item?.nombre}</h2>
+            <p>{item?.descripcion}</p>
+            <p>{item?.precio}</p>
+            <ItemCount item={item} id={id}/>
         </div>
     )
 }

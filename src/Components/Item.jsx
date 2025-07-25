@@ -7,10 +7,10 @@ function Item ( {item} ){
 
     return(
         <div className="Item">
-            <h3>{item.name}</h3>
-            <h4>{item.category}</h4>
-            <p>{item.description}</p>
-            <img src={item.image} alt="img" />
+            <h3>{item.nombre}</h3>
+            <h4>{item.categoria}</h4>
+            <p>{item.descripcion}</p>
+            <img src={item.imagen} alt="img" />
             <button
                 onClick={() => navigate(`/item/${item.id}`)}
             >

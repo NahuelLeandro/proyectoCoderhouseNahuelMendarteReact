@@ -19,22 +19,6 @@ function ItemListContainer (){
 
     useEffect(() => {
         
-        // if(categoryName){
-        //     fetch(`https://dummyjson.com/products/category/${categoryName}`)
-        //         .then(res => res.json())
-        //         .then( res => setItems(res.products) );
-        // }else{
-        //     fetch('https://dummyjson.com/products')
-        //         .then(res => res.json())
-        //         .then(res => setItems(res.products))
-        // }
-        /*
-        const url = 'https://dummyjson.com/products'
-        const urlCategory = `https://dummyjson.com/products/category/${categoryName}`
-        fetch( categoryName ? urlCategory : url )
-            .then(res => res.json())
-            .then(res => setItems(res.products))
-        */
 
         
         

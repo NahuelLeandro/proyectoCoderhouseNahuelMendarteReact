@@ -3,7 +3,7 @@ import { CartContext } from "../context/CartContext";
 
 
 
-function ItemCount ( {item} ){
+function ItemCount ( {item , id} ){
 
     const [count, setCount] = useState(0);
     const { addToCart } = useContext( CartContext )
@@ -26,7 +26,9 @@ function ItemCount ( {item} ){
         if (count === 0){
             return
         } else{
-            addToCart({...item , quantity: count})
+            addToCart({...item , quantity: count , id: id})
+            setCount(0)
+            // console.log(item)
         } 
     }
 

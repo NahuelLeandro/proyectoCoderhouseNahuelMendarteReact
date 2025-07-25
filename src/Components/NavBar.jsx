@@ -13,12 +13,9 @@ function NavBar (){
     const navigate = useNavigate();
 
     useEffect(() => {
-        // fetch('https://dummyjson.com/products/category-list')
-        //     .then(res => res.json())
-        //     .then(res => setCategorias(res))
-
 
             getCategoryList().then(res => setCategorias(res))
+
     } , [] )
     
     const handleChange = (e) => {
@@ -28,10 +25,15 @@ function NavBar (){
         }
     };
 
+    const handleLogoClick = () => {
+        navigate("/"); // Navega a la página principal
+    };
+
+
 
     return(
         <nav className="navBar">
-            <img src={logo} alt="Logo" />
+            <img src={logo} alt="Logo" onClick={handleLogoClick} />
             <h1>Emunah</h1>
             
             <select onChange={handleChange} defaultValue="">
